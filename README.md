@@ -1,5 +1,5 @@
 # The way we love programming, one day we shall make it.
-#  👋 Hi, I’m @Lawrencekawalya
+# 👋 Hi, I’m Lawrence Kawalya
 # 👀 I’m interested in coding 
 # 🌱 I’m currently learning ...programming at The University of The People 
 # 💞️ I’m looking to collaborate on Application software development 
