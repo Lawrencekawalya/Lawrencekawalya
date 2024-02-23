@@ -3,7 +3,8 @@
 # 👀 I’m interested in coding 
 # 🌱 I’m currently learning ...programming at The University of The People 
 # 💞️ I’m looking to collaborate on Application software development 
-# 📫 How to reach me Email: kawalya.lawrence2016@gmail.com Tel: +256778864614
+# 📫 How to reach me Email: kawalya.lawrence2016@gmail.com 
+#         📞  +256778864614
 
 <!---
 Lawrencekawalya/Lawrencekawalya is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
