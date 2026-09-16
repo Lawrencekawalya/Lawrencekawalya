@@ -6,6 +6,19 @@ I build reliable web and mobile applications for real-world business workflows, 
 
 I currently work on **freelance Laravel and Flutter projects, primarily in remote environments**, collaborating with clients and teams to turn operational requirements into maintainable software.
 
+## ☄️ Contribution Journey
+
+<picture>
+  <source
+    media="(prefers-reduced-motion: reduce)"
+    srcset="https://raw.githubusercontent.com/Lawrencekawalya/Lawrencekawalya/comet-graph/comet-reduced.svg"
+  />
+  <img
+    alt="Lawrence Kawalya cinematic GitHub contribution graph"
+    src="https://raw.githubusercontent.com/Lawrencekawalya/Lawrencekawalya/comet-graph/comet.svg"
+  />
+</picture>
+
 ---
 
 ## 🚀 What I Work With
