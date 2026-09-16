@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-labelledby="title desc">
   <title id="title">Lawrence Kawalya — Full-Stack Laravel and Flutter Developer</title>
-  <desc id="desc">Professional cosmic-themed GitHub profile banner with an animated terminal-style developer subtitle.</desc>
+  <desc id="desc">Animated cosmic GitHub profile banner with typing terminal text, twinkling constellations, moving light, and pulsing technology badges.</desc>
 
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -11,19 +11,28 @@
     <radialGradient id="glowA" cx="28%" cy="42%" r="58%">
       <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.22"/>
       <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+      <animate attributeName="cx" values="24%;34%;24%" dur="9s" repeatCount="indefinite"/>
     </radialGradient>
     <radialGradient id="glowB" cx="78%" cy="62%" r="55%">
       <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.22"/>
       <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+      <animate attributeName="cx" values="82%;72%;82%" dur="11s" repeatCount="indefinite"/>
     </radialGradient>
     <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="0%" stop-color="#7dd3fc">
+        <animate attributeName="stop-color" values="#7dd3fc;#c4b5fd;#7dd3fc" dur="7s" repeatCount="indefinite"/>
+      </stop>
       <stop offset="48%" stop-color="#f8fafc"/>
-      <stop offset="100%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#c4b5fd">
+        <animate attributeName="stop-color" values="#c4b5fd;#7dd3fc;#c4b5fd" dur="7s" repeatCount="indefinite"/>
+      </stop>
     </linearGradient>
     <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="titleGlow" x="-30%" y="-80%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="7"/>
     </filter>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#7dd3fc" stroke-opacity="0.035" stroke-width="1"/>
@@ -39,40 +48,51 @@
   <rect width="1000" height="300" rx="20" fill="url(#bg)"/>
   <rect width="1000" height="300" rx="20" fill="url(#glowA)"/>
   <rect width="1000" height="300" rx="20" fill="url(#glowB)"/>
-  <rect x="1" y="1" width="998" height="298" rx="19" fill="none" stroke="#7dd3fc" stroke-opacity="0.22"/>
+  <rect x="1" y="1" width="998" height="298" rx="19" fill="none" stroke="#7dd3fc" stroke-opacity="0.22">
+    <animate attributeName="stroke-opacity" values=".18;.42;.18" dur="6s" repeatCount="indefinite"/>
+  </rect>
   <rect x="20" y="20" width="960" height="260" rx="14" fill="url(#grid)" stroke="#94a3b8" stroke-opacity="0.08"/>
 
-  <path d="M34 62V34h28 M938 34h28v28 M34 238v28h28 M938 266h28v-28" fill="none" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="1.5"/>
+  <path d="M34 62V34h28 M938 34h28v28 M34 238v28h28 M938 266h28v-28" fill="none" stroke="#7dd3fc" stroke-opacity="0.5" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values=".28;.75;.28" dur="5s" repeatCount="indefinite"/>
+  </path>
 
-  <!-- constellation lines -->
-  <g fill="none" stroke="#7dd3fc" stroke-opacity="0.16" stroke-width="1">
-    <path d="M72 94 L150 64 L222 92 L294 54"/>
-    <path d="M704 60 L770 90 L842 58 L918 83"/>
-    <path d="M80 225 L145 206 L198 232"/>
-    <path d="M806 218 L866 192 L930 221"/>
+  <!-- constellation lines with traveling dash -->
+  <g fill="none" stroke="#7dd3fc" stroke-opacity="0.16" stroke-width="1" stroke-dasharray="3 6">
+    <path d="M72 94 L150 64 L222 92 L294 54"><animate attributeName="stroke-dashoffset" values="0;-36" dur="5s" repeatCount="indefinite"/></path>
+    <path d="M704 60 L770 90 L842 58 L918 83"><animate attributeName="stroke-dashoffset" values="0;36" dur="6s" repeatCount="indefinite"/></path>
+    <path d="M80 225 L145 206 L198 232"><animate attributeName="stroke-dashoffset" values="0;-30" dur="5.5s" repeatCount="indefinite"/></path>
+    <path d="M806 218 L866 192 L930 221"><animate attributeName="stroke-dashoffset" values="0;30" dur="6.5s" repeatCount="indefinite"/></path>
   </g>
 
   <!-- stars -->
   <g filter="url(#softGlow)">
-    <circle cx="72" cy="94" r="3" fill="#7dd3fc"><animate attributeName="opacity" values=".35;1;.35" dur="3.2s" repeatCount="indefinite"/></circle>
-    <circle cx="150" cy="64" r="2" fill="#c4b5fd"><animate attributeName="opacity" values="1;.35;1" dur="4.1s" repeatCount="indefinite"/></circle>
-    <circle cx="222" cy="92" r="2.6" fill="#38bdf8"><animate attributeName="opacity" values=".4;1;.4" dur="3.7s" repeatCount="indefinite"/></circle>
-    <circle cx="770" cy="90" r="2.8" fill="#a78bfa"><animate attributeName="opacity" values=".45;1;.45" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="842" cy="58" r="2" fill="#7dd3fc"><animate attributeName="opacity" values="1;.35;1" dur="4.4s" repeatCount="indefinite"/></circle>
-    <circle cx="918" cy="83" r="2.5" fill="#22d3ee"><animate attributeName="opacity" values=".35;1;.35" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="72" cy="94" r="3" fill="#7dd3fc"><animate attributeName="opacity" values=".25;1;.25" dur="3.2s" repeatCount="indefinite"/><animate attributeName="r" values="2.2;3.4;2.2" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="150" cy="64" r="2" fill="#c4b5fd"><animate attributeName="opacity" values="1;.25;1" dur="4.1s" repeatCount="indefinite"/><animate attributeName="r" values="1.5;2.5;1.5" dur="4.1s" repeatCount="indefinite"/></circle>
+    <circle cx="222" cy="92" r="2.6" fill="#38bdf8"><animate attributeName="opacity" values=".3;1;.3" dur="3.7s" repeatCount="indefinite"/></circle>
+    <circle cx="770" cy="90" r="2.8" fill="#a78bfa"><animate attributeName="opacity" values=".35;1;.35" dur="3s" repeatCount="indefinite"/><animate attributeName="r" values="2.1;3.2;2.1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="842" cy="58" r="2" fill="#7dd3fc"><animate attributeName="opacity" values="1;.25;1" dur="4.4s" repeatCount="indefinite"/></circle>
+    <circle cx="918" cy="83" r="2.5" fill="#22d3ee"><animate attributeName="opacity" values=".25;1;.25" dur="3.4s" repeatCount="indefinite"/><animate attributeName="r" values="1.8;3;1.8" dur="3.4s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- shooting star -->
-  <g opacity="0">
-    <line x1="790" y1="40" x2="735" y2="70" stroke="#e0f2fe" stroke-width="2" stroke-linecap="round"/>
-    <circle cx="790" cy="40" r="3" fill="#fff" filter="url(#softGlow)"/>
-    <animateTransform attributeName="transform" type="translate" values="0 0;-150 80" dur="1.2s" begin="1s;8s" repeatCount="1"/>
-    <animate attributeName="opacity" values="0;1;0" dur="1.2s" begin="1s;8s" repeatCount="1"/>
+  <!-- repeating shooting star -->
+  <g>
+    <line x1="820" y1="34" x2="760" y2="66" stroke="#e0f2fe" stroke-width="2" stroke-linecap="round" opacity="0"/>
+    <circle cx="820" cy="34" r="3" fill="#fff" filter="url(#softGlow)" opacity="0"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;-170 90;-170 90" keyTimes="0;.72;.83;1" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.72;.75;.83;1" dur="9s" repeatCount="indefinite"/>
   </g>
 
-  <!-- name -->
+  <!-- softly pulsing name glow -->
+  <text x="500" y="111" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="52" font-weight="700" letter-spacing="7" fill="#7dd3fc" opacity="0.12" filter="url(#titleGlow)">LAWRENCE KAWALYA
+    <animate attributeName="opacity" values=".08;.28;.08" dur="4.8s" repeatCount="indefinite"/>
+  </text>
   <text x="500" y="111" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="52" font-weight="700" letter-spacing="7" fill="url(#titleGrad)">LAWRENCE KAWALYA</text>
-  <line x1="310" y1="125" x2="690" y2="125" stroke="#7dd3fc" stroke-opacity="0.28"/>
+  <line x1="310" y1="125" x2="690" y2="125" stroke="#7dd3fc" stroke-opacity="0.28">
+    <animate attributeName="x1" values="430;310;310" keyTimes="0;.35;1" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="570;690;690" keyTimes="0;.35;1" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values=".08;.5;.2" dur="5s" repeatCount="indefinite"/>
+  </line>
 
   <!-- animated terminal line: types, pauses, deletes, repeats -->
   <text x="252" y="158" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="20" fill="#b9d8ef" clip-path="url(#typingClip)">$ full-stack Laravel &amp; Flutter developer</text>
@@ -82,22 +102,24 @@
     <animate attributeName="opacity" values="1;1;.12;.12;1" keyTimes="0;.42;.5;.58;1" dur="1.05s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- stack chips -->
+  <!-- stack chips: staggered gentle pulse -->
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12" font-weight="700" text-anchor="middle">
-    <g transform="translate(177 190)"><rect width="88" height="28" rx="7" fill="#1f6f9f"/><text x="44" y="18" fill="#e0f2fe">PHP</text></g>
-    <g transform="translate(275 190)"><rect width="98" height="28" rx="7" fill="#ef4444" fill-opacity=".9"/><text x="49" y="18" fill="#fff">LARAVEL</text></g>
-    <g transform="translate(383 190)"><rect width="96" height="28" rx="7" fill="#0284c7"/><text x="48" y="18" fill="#e0f2fe">FLUTTER</text></g>
-    <g transform="translate(489 190)"><rect width="78" height="28" rx="7" fill="#2563eb"/><text x="39" y="18" fill="#eff6ff">DART</text></g>
-    <g transform="translate(577 190)"><rect width="90" height="28" rx="7" fill="#0f766e"/><text x="45" y="18" fill="#ecfeff">MYSQL</text></g>
-    <g transform="translate(677 190)"><rect width="146" height="28" rx="7" fill="#6d28d9"/><text x="73" y="18" fill="#f5f3ff">REST APIs</text></g>
+    <g transform="translate(177 190)"><animate attributeName="opacity" values=".78;1;.78" dur="3.6s" begin="0s" repeatCount="indefinite"/><rect width="88" height="28" rx="7" fill="#1f6f9f"/><text x="44" y="18" fill="#e0f2fe">PHP</text></g>
+    <g transform="translate(275 190)"><animate attributeName="opacity" values=".78;1;.78" dur="3.6s" begin=".35s" repeatCount="indefinite"/><rect width="98" height="28" rx="7" fill="#ef4444" fill-opacity=".9"/><text x="49" y="18" fill="#fff">LARAVEL</text></g>
+    <g transform="translate(383 190)"><animate attributeName="opacity" values=".78;1;.78" dur="3.6s" begin=".7s" repeatCount="indefinite"/><rect width="96" height="28" rx="7" fill="#0284c7"/><text x="48" y="18" fill="#e0f2fe">FLUTTER</text></g>
+    <g transform="translate(489 190)"><animate attributeName="opacity" values=".78;1;.78" dur="3.6s" begin="1.05s" repeatCount="indefinite"/><rect width="78" height="28" rx="7" fill="#2563eb"/><text x="39" y="18" fill="#eff6ff">DART</text></g>
+    <g transform="translate(577 190)"><animate attributeName="opacity" values=".78;1;.78" dur="3.6s" begin="1.4s" repeatCount="indefinite"/><rect width="90" height="28" rx="7" fill="#0f766e"/><text x="45" y="18" fill="#ecfeff">MYSQL</text></g>
+    <g transform="translate(677 190)"><animate attributeName="opacity" values=".78;1;.78" dur="3.6s" begin="1.75s" repeatCount="indefinite"/><rect width="146" height="28" rx="7" fill="#6d28d9"/><text x="73" y="18" fill="#f5f3ff">REST APIs</text></g>
   </g>
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" text-anchor="middle">
-    <g transform="translate(262 230)"><rect width="116" height="25" rx="6" fill="#0f172a" stroke="#334155"/><text x="58" y="16" fill="#cbd5e1">GIT / GITHUB</text></g>
-    <g transform="translate(388 230)"><rect width="98" height="25" rx="6" fill="#0f172a" stroke="#334155"/><text x="49" y="16" fill="#cbd5e1">POSTMAN</text></g>
-    <g transform="translate(496 230)"><rect width="104" height="25" rx="6" fill="#0f172a" stroke="#334155"/><text x="52" y="16" fill="#cbd5e1">FIREBASE</text></g>
-    <g transform="translate(610 230)"><rect width="128" height="25" rx="6" fill="#0f172a" stroke="#334155"/><text x="64" y="16" fill="#cbd5e1">REMOTE-FIRST</text></g>
+    <g transform="translate(262 230)"><rect width="116" height="25" rx="6" fill="#0f172a" stroke="#334155"><animate attributeName="stroke" values="#334155;#38bdf8;#334155" dur="5s" begin="0s" repeatCount="indefinite"/></rect><text x="58" y="16" fill="#cbd5e1">GIT / GITHUB</text></g>
+    <g transform="translate(388 230)"><rect width="98" height="25" rx="6" fill="#0f172a" stroke="#334155"><animate attributeName="stroke" values="#334155;#60a5fa;#334155" dur="5s" begin="1s" repeatCount="indefinite"/></rect><text x="49" y="16" fill="#cbd5e1">POSTMAN</text></g>
+    <g transform="translate(496 230)"><rect width="104" height="25" rx="6" fill="#0f172a" stroke="#334155"><animate attributeName="stroke" values="#334155;#a78bfa;#334155" dur="5s" begin="2s" repeatCount="indefinite"/></rect><text x="52" y="16" fill="#cbd5e1">FIREBASE</text></g>
+    <g transform="translate(610 230)"><rect width="128" height="25" rx="6" fill="#0f172a" stroke="#334155"><animate attributeName="stroke" values="#334155;#22d3ee;#334155" dur="5s" begin="3s" repeatCount="indefinite"/></rect><text x="64" y="16" fill="#cbd5e1">REMOTE-FIRST</text></g>
   </g>
 
-  <text x="500" y="275" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748b" letter-spacing="2">BUILD • INTEGRATE • OPTIMIZE • DELIVER</text>
+  <text x="500" y="275" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748b" letter-spacing="2">BUILD • INTEGRATE • OPTIMIZE • DELIVER
+    <animate attributeName="fill" values="#64748b;#94a3b8;#64748b" dur="4s" repeatCount="indefinite"/>
+  </text>
 </svg>
