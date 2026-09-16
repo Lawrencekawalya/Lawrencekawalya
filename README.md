@@ -1,6 +1,13 @@
-# Hi, I'm Lawrence Kawalya 👋
+<p align="center">
+  <img src="./assets/header.svg" alt="Lawrence Kawalya — Full-Stack Laravel and Flutter Developer" width="100%" />
+</p>
 
-### Full-Stack Software Developer | Laravel • Flutter • REST APIs • MySQL
+<p align="center">
+  <a href="https://github.com/Lawrencekawalya"><img src="./assets/badge-github.svg" height="34" alt="GitHub profile" /></a>
+  <a href="https://github.com/Lawrencekawalya?tab=repositories"><img src="./assets/badge-projects.svg" height="34" alt="Projects" /></a>
+  <a href="mailto:lawkawaly@gmail.com"><img src="./assets/badge-email.svg" height="34" alt="Email Lawrence" /></a>
+  <img src="./assets/badge-remote.svg" height="34" alt="Available for remote and freelance work" />
+</p>
 
 I build reliable web and mobile applications for real-world business workflows, with a strong focus on **Laravel/PHP backends, REST API integrations, relational databases, Flutter applications, debugging, deployment, and system performance**.
 
